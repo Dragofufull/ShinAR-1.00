@@ -1,0 +1,22 @@
+
+.btn, .tab-btn, .nav-list a, .inline-form button, .project-btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:active, .tab-btn:active, .inline-form button:active, .project-btn:active {
+    transform: scale(0.95); 
+}
+
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}

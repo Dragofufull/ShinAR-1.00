@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши работы | ShinAR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/portfolio.css">
+</head>
+<body>
+
+   <header class="portfolio-header">
+    <div class="header-nav-left">
+        <a href="index.html" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>На главную</span>
+        </a>
+    </div>
+    <div class="header-title-center">
+        <h1>Галерея работ <span class="brand-accent">ShinAR</span></h1>
+    </div>
+    <div class="header-space-right"></div> </header>
+    <section class="portfolio-section">
+        
+        <div class="portfolio-filters">
+            <button class="filter-btn active" onclick="filterGallery('all')">Все работы</button>
+            <button class="filter-btn" onclick="filterGallery('shlifovka')">Шлифовка стен</button>
+            <button class="filter-btn" onclick="filterGallery('pokraska')">Покраска стен</button>
+            <button class="filter-btn" onclick="filterGallery('shpaklevka')">Шпаклёвка</button>
+        </div>
+
+        <div class="portfolio-grid">
+            
+            <div class="portfolio-item shlifovka">
+                <img src="img/shlifovka1.jpg" alt="Шлифовка стен">
+                <div class="item-overlay">
+                    <h4>Выравнивание и шлифовка под покраску</h4>
+                </div>
+            </div>
+
+            <div class="portfolio-item pokraska">
+                <img src="img/pokraska1.jpg" alt="Покраска стен">
+                <div class="item-overlay">
+                    <h4>Безвоздушная покраска гостиной</h4>
+                </div>
+            </div>
+
+            <div class="portfolio-item shpaklevka">
+                <img src="img/shpaklevka1.jpg" alt="Шпаклёвка стен">
+                <div class="item-overlay">
+                    <h4>Финишная шпаклёвка спальни</h4>
+                </div>
+            </div>
+
+            </div>
+    </section>
+
+    <script src="/js/portfolio.js"></script>
+</body>
+</html>

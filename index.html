@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="data:,">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/media.css">
+    <link rel="stylesheet" href="/styles/animaefion.css">
+    <title>ShinAR</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+            <label for="menu-checkbox" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#gallery">Наши работы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="Поиск..." class="search-input">
+            </div>
+            <div class="profill">
+                <a href="register.html" id="user-profile-nav">
+                     <i class="fa-regular fa-user profill-i" style="color: rgb(255, 255, 255);"></i>
+                </a>
+            </div>
+        </header>
+        
+        <main>
+            <div class="main-hero">
+                <img src="/imgs/main.jpg" alt="Малярка и отделка">
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <h1>Профессиональная малярка и отделка</h1>
+                        <p>Ровный тон без подтёков, чёткие границы и идеальные углы. Спокойно берёмся за сложные дизайнерские проекты, работаем на совесть и оставляем после себя чистоту.</p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="btn btn-primary">Услуги</a>
+                            <a href="#gallery" class="btn btn-secondary">Проектные работы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="services scroll-reveal" id="services">
+                    <div class="services-nim"><h1>Услуги для работы </h1></div>
+                    <div class="card-contener">
+                        <div class="card">
+                            <img src="/imgs/sanding-drywall.webp" alt="Wall Sanding" class="card-img">
+                            <span class="card-title-overlay">Шлифовка стен</span>
+                        </div>
+                        <div class="card">
+                            <img src="/imgs/maxresdefault.jpg" alt="Wall Sanding" class="card-img">
+                            <span class="card-title-overlay">Покраска потолков</span>
+                        </div>
+                        <div class="card">
+                            <img src="/imgs/okrashivanie-valikom.webp" alt="Wall Sanding" class="card-img">
+                            <span class="card-title-overlay">Покраска стен</span>
+                        </div>
+                        <div class="card">
+                            <img src="/imgs/620-SHpaklevshhik-1.jpg" alt="Wall Sanding" class="card-img">
+                            <span class="card-title-overlay">Шпаклёвщик</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <section class="gallery-section scroll-reveal" id="gallery">
+                    <h2 class="gallery-title">Галерея наших работ</h2>
+                    <div class="gallery-tabs">
+                        <button class="tab-btn active" data-category="all">Все</button>
+                        <button class="tab-btn" data-category="apartments">Квартиры</button>
+                        <button class="tab-btn" data-category="offices">Офисы</button>
+                        <button class="tab-btn" data-category="decor">Декор</button>
+                        <button class="tab-btn" data-category="facades">Фасады</button>
+                    </div>
+
+                    <div class="gallery-grid">
+                        <div class="project-card" data-category="apartments">
+                            <img src="/imgs/0bed0976da602062b0aad618529a658f.png" alt="Интерьер гостиной" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>ЖК "МАЯК"</h3>
+                                    <p>Полная отделка 3-х комн. кв., 98 кв.м.</p>
+                                    <a href="#" class="project-btn">Посмотреть проект</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="offices">
+                            <img src="/imgs/i.webp" alt="Стена с молдингами" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>Офис "Центр"</h3>
+                                    <p>Декоративная штукатурка и зонирование</p>
+                                    <a href="#" class="project-btn">Посмотреть проект</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card" data-category="decor">
+                            <img src="/imgs/9b7f3fe041658c03a0641e24d357777b.jpg" alt="Коридор" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>ЖК "Панорама"</h3>
+                                    <p>Малярные работы и финишная отделка</p>
+                                    <a href="#" class="project-btn">Посмотреть проект</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center; margin-top: 30px;">
+    <a href="portfolio.html" class="auth-btn" style="text-decoration: none; display: inline-block;">Посмотреть все работы</a>
+</div>
+                </section>
+                
+                <section class="about-section scroll-reveal">
+                    <div class="about-container">
+                        <div class="company-block">
+                            <h2 class="main-section-title">О компании</h2>
+                            <div class="company-grid">
+                                <div class="company-images">
+                                    <div class="img-small-left">
+                                        <img src="/imgs/sanding-drywall.webp" alt="Процесс работы">
+                                    </div>
+                                    <div class="img-main-right">
+                                        <img src="/imgs/main.jpg" alt="Красивый интерьер">
+                                    </div>
+                                </div>
+                                <div class="company-text">
+                                    <p class="lead-text">Наша основная миссия — создавать качественные, современные и функциональные пространства, подходящие для жизни и работы.</p>
+                                    <p class="sub-text">ShinAR была основана для того, чтобы полностью закрыть потребность в безупречной малярной отделке. Мы зарекомендовали себя как надежный партнер в строительной отрасли благодаря нашему профессионализму, идеальным углам и строгой ответственности.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="minimal-divider">
+
+                        <div class="experience-block">
+                            <h3 class="block-title">Наш опыт</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <span class="stat-num">5+</span>
+                                    <span class="stat-label">лет в сфере</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-num">150+</span>
+                                    <span class="stat-label">проектов</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-num">99%</span>
+                                    <span class="stat-label">довольных клиентов</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-num">100%</span>
+                                    <span class="stat-label">гарантия качества</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="minimal-divider">
+
+                        <div class="team-block" id="contacts">
+                            <div class="team-header">
+                                <h2 class="main-section-title">Команды</h2>
+                                <p class="team-lead-desc">В ShinAR работают лучшие специалисты в своих областях — маляры, штукатуры и мастера финишной отделки. Мы гордимся нашим коллективом и вкладываем все силы в идеальный результат.</p>
+                            </div>
+
+                            <div class="team-grid">
+                                <div class="member-card">
+                                    <div class="member-img-box">
+                                        <img src="/imgs/boss.jpg" alt="Александр Шарипов" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'fake-member-avatar\'><i class=\'fa-solid fa-user-tie\'></i></div>';">
+                                    </div>
+                                    <h4>Александр Шарипов</h4>
+                                    <p class="position">Генеральный директор / Шеф-маляр</p>
+                                </div>
+
+                                <div class="member-card">
+                                    <div class="member-img-box">
+                                        <div class="fake-member-avatar"><i class="fa-solid fa-headset"></i></div>
+                                    </div>
+                                    <h4>Служба поддержки</h4>
+                                    <p class="position">Контроль качества (800) 555-35-35</p>
+                                </div>
+
+                               <div class="member-card form-member-card">
+                                     <div class="inline-feedback-wrap">
+                                         <h5>Написать нам <i class="fa-brands fa-telegram" style="color: #24A1DE; margin-left: 5px;"></i></h5>
+                                        <form class="inline-form" id="telegram-form">
+                                            <input type="text" id="form-name" placeholder="Ваше имя" required>
+                                            <input type="text" id="form-contact" placeholder="Телефон или @username" required>
+                                            <textarea id="form-message" placeholder="Что нужно сделать?" rows="2" required></textarea>
+                                            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="member-card map-member-card">
+                                    <div class="inline-map-box">
+                                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A36e6b5d9bc37f6874b26715fba1bb7538df59f13dd4dfba86049a463a5bd676a&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </main> 
+        
+        <footer class="zen-footer">
+            <div class="footer-container">
+                <div class="footer-main-row">
+                    <div class="footer-brand">
+                        <span class="footer-logo">ShinAR</span>
+                        <p class="footer-tagline">Безупречная малярная отделка и ремонт пространств.</p>
+                    </div>
+                    
+                    <div class="footer-nav-columns">
+                        <div class="footer-col">
+                            <h5>Услуги</h5>
+                            <ul>
+                                <li><a href="#services">Малярные работы</a></li>
+                                <li><a href="#services">Штукатурка стен</a></li>
+                                <li><a href="#services">Финишная отделка</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h5>Компания</h5>
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#gallery">Наши проекты</a></li>
+                                <li><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h5>Связь</h5>
+                            <ul>
+                                <li><a href="tel:+79991234567" class="footer-highlight">+7 (999) 123-45-67</a></li>
+                                <li><a href="mailto:info@shinar.ru">info@shinar.ru</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="footer-divider">
+
+                <div class="footer-bottom-row">
+                    <p class="copyright">&copy; 2026 ShinAR. Все права защищены.</p>
+                    <div class="footer-legal-links">
+                        <a href="#">Политика конфиденциальности</a>
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
+        </footer>   
+    </div>
+
+    <script src="/js/script.js" defer></script>
+     <script src="/js/animeifion.js" defer></script>
+      <script src="/js/tellegram_bot.js" defer></script>
+
+     <script>
+window.replainSettings = { id: 'e4b078cb-1c0d-4312-82a2-85f98605ff7a' };
+(function(u){var s=document.createElement('script');s.async=true;s.src=u;
+var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+})('https://widget.replain.cc/dist/client.js');
+</script>
+</body>
+</html>
